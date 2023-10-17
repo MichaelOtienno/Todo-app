@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <div class="nav">
+        <h2>Welcome! Plan you activities here</h2>
+
+    </div>
+    <div class="buttons">
+        <button id="add">Add New Task</button>
+        <button id="view">View Tasks</button>
+        <button id="back" style="display: none;">Back</button>
+
+    </div>
+
+    <div class="form" style="display: none;">
+        <form>
+            <input type="text" placeholder="title" id="task">
+            <input type="textarea" placeholder="description" id="description">
+            <input type="date" placeholder="date" id="date">
+
+        </form>
+        <button id="addd">ADD</button>
+    </div>
+
+    <div class="left" style="display: none;">
+        <ul id="tasks"></ul>
+    </div>
+
+    <div class="right" style="display: none;">
+        <ul id="taskEdit">
+        </ul>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+<script src="todo.js"></script>
+
+</html>
